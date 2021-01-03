@@ -18,8 +18,8 @@ config interface 'lan'
 config interface 'WAN'
         option proto 'pppoe'
         option ifname 'eth0'
-        option username ${{ secrets.PPPOE-ACCOUNT }}
-        option password ${{ secrets.PPPOE-PASSWORD }}
+        option username ${{ secrets.PPPOE_ACCOUNT }}
+        option password ${{ secrets.PPPOE_PASSWORD }}
         option ipv6 'auto'
         option keepalive '0'
         option mtu '1492'
